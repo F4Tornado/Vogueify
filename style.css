@@ -31,13 +31,27 @@ span {
   position: absolute;
 }
 
-input {
+input,
+#colorContainer {
+  display: inline-block;
+  height: 19px;
+
   background-color: transparent;
   border: 2px solid white;
 
   margin: 16px;
   padding: 16px;
   border-radius: 4px;
+}
+
+input[type="button"] {
+  height: auto;
+}
+
+input[type="color"] {
+  padding: 0;
+  border: none;
+  margin: 0;
 }
 
 #measureText {

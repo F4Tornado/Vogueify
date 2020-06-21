@@ -95,7 +95,7 @@ function drawLoop() {
         let text = document.getElementById("text").value;
         let font = document.getElementById("font").value;
 
-        draw.fillStyle = "#000";
+        draw.fillStyle = document.getElementById("textColor").value;
         draw.font = `${textWidth(text, font)}px ${font}`;
         draw.textAlign = "center";
         draw.textBaseline = "top";
@@ -111,7 +111,7 @@ function drawLoop() {
         let text = document.getElementById("text").value;
         let font = document.getElementById("font").value;
 
-        draw.fillStyle = "#000";
+        draw.fillStyle = document.getElementById("textColor").value;
         draw.font = `${textWidth(text, font)}px ${font}`;
         draw.textAlign = "center";
         draw.textBaseline = "top";
@@ -136,7 +136,7 @@ function drawLoop() {
       let text = document.getElementById("text").value;
       let font = document.getElementById("font").value;
 
-      draw.fillStyle = "#000";
+      draw.fillStyle = document.getElementById("textColor").value;
       draw.font = `${textWidth(text, font)}px ${font}`;
       draw.textAlign = "center";
       draw.textBaseline = "top";
@@ -191,7 +191,7 @@ function download() {
     let text = document.getElementById("text").value;
     let font = document.getElementById("font").value;
 
-    draw.fillStyle = "#000";
+    draw.fillStyle = document.getElementById("textColor").value;
     draw.font = `${textWidth(text, font)}px ${font}`;
     draw.textAlign = "center";
     draw.textBaseline = "top";
@@ -204,7 +204,7 @@ function download() {
     let text = document.getElementById("text").value;
     let font = document.getElementById("font").value;
 
-    draw.fillStyle = "#000";
+    draw.fillStyle = document.getElementById("textColor").value;
     draw.font = `${textWidth(text, font)}px ${font}`;
     draw.textAlign = "center";
     draw.textBaseline = "top";
