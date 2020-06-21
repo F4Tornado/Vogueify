@@ -1,0 +1,54 @@
+* {
+  color: white;
+  font-size: medium;
+}
+
+body {
+  background-color: black;
+
+  margin: 0;
+}
+
+span {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+#cnvContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#buttonsDiv {
+  position: absolute;
+}
+
+input {
+  background-color: transparent;
+  border: 2px solid white;
+
+  margin: 16px;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+#measureText {
+  position: absolute;
+  visibility: hidden;
+  height: auto;
+  width: auto;
+  white-space: nowrap;
+}
+
+.slider {
+  padding: 0;
+  margin: 8px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Vogueify Yourself</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="" rel="stylesheet" id="newFont">
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <div id="cnvContainer">
+    <div>
+      <span>Saturation - <input type="range" max=1 min=0 value=0.5 step=0.0001 class="slider" id="saturation"
+          onchange="applyEffects()"></span>
+      <span>Red Beginning - <input type="range" max=1 min=0 value=0 step=0.0001 class="slider" id="redB"
+          onchange="applyEffects()"></span>
+      <span>Red End - <input type="range" max=1 min=0 value=1 step=0.0001 class="slider" id="redE"
+          onchange="applyEffects()"></span>
+      <span>Red Exp - <input type="range" max=4 min=0 value=1 step=0.0001 class="slider" id="redExp"
+          onchange="applyEffects()"></span>
+      <span>Green Beginning - <input type="range" max=1 min=0 value=0 step=0.0001 class="slider" id="greenB"
+          onchange="applyEffects()"></span>
+      <span>Green End - <input type="range" max=1 min=0 value=1 step=0.0001 class="slider" id="greenE"
+          onchange="applyEffects()"></span>
+      <span>Green Exp - <input type="range" max=4 min=0 value=1 step=0.0001 class="slider" id="greenExp"
+          onchange="applyEffects()"></span>
+      <span>Blue Beginning - <input type="range" max=1 min=0 value=0 step=0.0001 class="slider" id="blueB"
+          onchange="applyEffects()"></span>
+      <span>Blue End - <input type="range" max=1 min=0 value=1 step=0.0001 class="slider" id="blueE"
+          onchange="applyEffects()"></span>
+      <span>Blue Exp - <input type="range" max=4 min=0 value=1 step=0.0001 class="slider" id="blueExp"
+          onchange="applyEffects()"></span>
+    </div>
+    <canvas id="cnv"></canvas>
+    <canvas id="colorCurves"></canvas>
+    <canvas id="effects" hidden></canvas>
+  </div>
+  <div id="buttonsDiv">
+    <input type="file" onchange="upload(this)">
+    <input type="text" id="text" value="VOGUE">
+    <input type="text" id="font" value="Times New Roman">
+    <input type="text" id="import" placeholder="Link to font">
+    <input type="button" value="Download" onclick="download()">
+  </div>
+
+  <div id="measureText"></div>
+  <script src="sketch.js"></script>
+  <script src="lib.js"></script>
+</body>
+
+</html>
