@@ -86,7 +86,7 @@ function drawLoop() {
     ccDraw.stroke();
 
     if (img.height < window.innerHeight * 0.75) {
-      if (img.width / 1.536 > img.height) {
+      if (img.width * 1.536 > img.height) {
         c.width = img.height / 1.536;
         c.height = img.height;
         document.getElementById("cnv").style = "cursor: ew-resize";
@@ -122,7 +122,7 @@ function drawLoop() {
     } else {
       c.width = window.innerHeight * 0.75 / 1.536;
       c.height = window.innerHeight * 0.75;
-      if (img.width / 1.536 > img.height) {
+      if (img.width * 1.536 > img.height) {
         dragDirection = "x";
         document.getElementById("cnv").style = "cursor: ew-resize";
         draw.drawImage(effects, imgX, imgY, img.height / 1.536, img.height, 0, 0, window.innerHeight * 0.75 / 1.536, window.innerHeight * 0.75);
@@ -131,7 +131,6 @@ function drawLoop() {
         dragDirection = "y";
         document.getElementById("cnv").style = "cursor: ns-resize";
         draw.drawImage(effects, imgX, imgY, img.width, img.width * 1.536, 0, 0, window.innerHeight * 0.75 / 1.536, window.innerHeight * 0.75);
-
       }
 
       let text = document.getElementById("text").value;
@@ -184,7 +183,7 @@ document.onmousemove = (e) => {
 }
 
 function download() {
-  if (img.width / 1.536 > img.height) {
+  if (img.width * 1.536 > img.height) {
     c.width = img.height / 1.536;
     c.height = img.height;
     draw.drawImage(effects, imgX, imgY, img.height / 1.536, img.height, 0, 0, img.height / 1.536, img.height);
